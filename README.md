@@ -33,3 +33,18 @@ $ d drawing: mona lisa
 
 ## Completion (TODO, not ready yet)
 ...
+
+## Installation options
+You can install with custom options:
+```sh
+DONE_FILE="$HOME/Notes/done.txt" ./install.sh
+```
+
+Otions that can be defined:
+```txt 
+DONE_FILE - what file on system save to (default is done.txt)
+BIN_DIR - binary directory
+BIN_NAME - binary name
+ZSH_COMP_DIR - Zsh completions directory
+BASH_COMP_DIR - Bash completions directory
+```

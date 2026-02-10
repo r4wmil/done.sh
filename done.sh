@@ -1,6 +1,6 @@
 #!/bin/sh
 
-DONE_FILE="$HOME/done.txt"
+DONE_FILE="{done_file}"
 
 touch $DONE_FILE
 
