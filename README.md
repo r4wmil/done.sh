@@ -1,12 +1,35 @@
-# Done
-CLI app that tracks your every move... privatelly, for you only
+# done.sh
+CLI app that helps you track your every move.
 
-## How to use
+## Installation/Uninstallation
 ```sh
 ./install.sh
-# add 'alias d="done.sh"' if needed
-done.sh 'picking nose'
-done.sh 'playing lego'
-done.sh 'doing dishes'
-# check $HOME/done.txt for analysis
+./uninstall.sh
 ```
+
+## Usage
+Write in your shell:
+```sh
+$ done.sh chore: doing dishes
+$ done.sh sport: pushups 20
+$ done.sh sport: pullups 10
+```
+
+The $HOME/done.txt file becomes:
+```txt
+% 2026-02-10
+% 18:06 chore: doing dishes
+% 18:13 sport: pushups 20
+% 18:15 sport: pullups 10
+```
+As simple as that!
+
+Add 'alias d="done.sh"' if needed
+```sh
+$ d sport: pullups 10
+$ d sport: pullups 15
+$ d drawing: mona lisa
+```
+
+## Completion (TODO, not ready yet)
+...
