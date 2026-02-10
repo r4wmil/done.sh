@@ -32,9 +32,9 @@ $ d drawing: mona lisa
 ```
 
 ## Completions
-You can install with other cool completions enabled:
-```sh
-COMPLETIONS='chores: sport: study:' ./install.sh
+You can set your cool custom completions in your done.txt:
+```txt
+%COMPLETIONS=sport: chores: study:
 ```
 
 ## Other options
@@ -53,5 +53,4 @@ BASH_COMP_DIR - Bash completions directory
 ```
 
 # Manual installation
-Just copy done.sh to your binaries directory, change {done_file} to the path of your liking.
-Shell completions: just copy one file from the completion/ directory to your shell completion directory changing {completions} string inside to the completions of your liking.
+Just copy done.sh to your binaries directory, change {donefile} to the path of your liking.

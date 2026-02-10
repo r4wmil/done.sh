@@ -1,3 +1,4 @@
 #compdef done.sh
+COMP=`cat "{donefile}" | awk -F '%COMPLETIONS=' '{print $2}'`
 _arguments \
-  '1:command:({completions})'
+  "1:command:($COMP)"

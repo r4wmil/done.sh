@@ -11,4 +11,3 @@ fi
 [ -z $BIN_DIR ] && BIN_DIR="$PREFIX/bin"
 [ -z $BIN_NAME ] && BIN_NAME="done.sh"
 [ -z $DONE_FILE ] && DONE_FILE="$HOME/done.txt"
-[ -z $COMPLETIONS ] && COMPLETIONS="sport: prog: chores:"
