@@ -1,6 +1,6 @@
 #!/bin/sh
-SUDO=sudo
-
-$SUDO rm "$HOME/.local/bin/done.sh"
-$SUDO rm "/etc/bash_completion.d/_done.sh"
-$SUDO rm "/usr/share/zsh/vendor-completions/_done.sh"
+. ./globals.sh
+set -x
+$SUDO rm "$BIN_DIR/$BIN_NAME"
+$SUDO rm "$BASH_COMP_DIR/$BIN_NAME"
+$SUDO rm "$ZSH_COMP_DIR/_$BIN_NAME"

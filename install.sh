@@ -1,8 +1,7 @@
 #!/bin/sh
-SUDO=sudo
-#[ ! -z $TERMUX__PREFIX ] && SUDO=""
-
-mkdir -p "$HOME/.local/bin"
-cp "./done.sh" "$HOME/.local/bin/"
-$SUDO cp "./completions/bash" "/etc/bash_completion.d/_done.sh"
-$SUDO cp "./completions/zsh" "/usr/share/zsh/vendor-completions/_done.sh"
+. ./globals.sh
+set -x
+$SUDO mkdir -p "$BIN_DIR"
+$SUDO cp "./done.sh" "$BIN_DIR/$BIN_NAME"
+$SUDO cp "./completions/bash" "$BASH_COMP_DIR/$BIN_NAME"
+$SUDO cp "./completions/zsh" "$ZSH_COMP_DIR/_$BIN_NAME"
