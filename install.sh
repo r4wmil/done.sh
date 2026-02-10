@@ -16,10 +16,10 @@ echo "./done.sh -> $BIN_DIR/$BIN_NAME"
 copy_with_replace './done.sh' "$BIN_DIR/$BIN_NAME"
 $SUDO chmod +x "$BIN_DIR/$BIN_NAME"
 
-echo "./completions/bash -> $BIN_DIR/$BIN_NAME"
+echo "./completions/bash -> $BASH_COMP_DIR/$BIN_NAME"
 copy_with_replace './completions/bash' "$BASH_COMP_DIR/$BIN_NAME"
 
-echo "./completions/zsh -> $BIN_DIR/$BIN_NAME"
+echo "./completions/zsh -> $ZSH_COMP_DIR/_$BIN_NAME"
 copy_with_replace './completions/zsh' "$ZSH_COMP_DIR/_$BIN_NAME"
 
 echo "If no errors, then everything is ok!"
