@@ -1,7 +1,9 @@
 _done() {
 	local cur
 	cur="${COMP_WORDS[COMP_CWORD]}"
-	COMP=`cat "{donefile}" | awk -F '%COMPLETIONS=' '{print $2}'`
+	if [ -f "{donefile}" ]; then
+		COMP=`cat "{donefile}" | awk -F '%COMPLETIONS=' '{print $2}'`
+	fi
 	COMPREPLY=($(compgen -W "$COMP" -- "$cur"))
 }
 complete -F _done done.sh
