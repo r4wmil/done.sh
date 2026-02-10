@@ -7,5 +7,5 @@ if [ ! -z $TERMUX__PREFIX ]; then
 fi
 BIN_DIR="$PREFIX/bin"
 BIN_NAME="done.sh"
-ZSH_COMP_DIR="/usr/share/zsh/vendor-completions"
-BASH_COMP_DIR="/usr/share/bash-completion/completions"
+ZSH_COMP_DIR="$USR_DIR/share/zsh/vendor-completions"
+BASH_COMP_DIR="$USR_DIR/share/bash-completion/completions"
