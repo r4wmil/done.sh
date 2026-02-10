@@ -22,6 +22,7 @@ The $HOME/done.txt file becomes:
 % 18:13 sport: pushups 20
 % 18:15 sport: pullups 10
 ```
+
 As simple as that!
 
 Add 'alias d="done.sh"' if needed
@@ -32,9 +33,10 @@ $ d drawing: mona lisa
 ```
 
 ## Completions
-You can set your cool custom completions in your done.txt:
+You can set your cool custom completions on the top of your done.txt file:
 ```txt
 %COMPLETIONS=sport: chores: study:
+...
 ```
 
 ## Other options
@@ -43,14 +45,14 @@ You can install with custom options:
 DONE_FILE="$HOME/Notes/done.txt" ./install.sh
 ```
 
-Otions that can be defined:
+Options that can be defined:
 ```txt 
-DONE_FILE - what file on system save to (default is done.txt)
-BIN_DIR - binary directory
+DONE_FILE - what file on system save to (default is done.txt in your home directory)
+BIN_DIR - where binary lies
 BIN_NAME - binary name
 ZSH_COMP_DIR - Zsh completions directory
 BASH_COMP_DIR - Bash completions directory
 ```
 
 # Manual installation
-Just copy done.sh to your binaries directory, change {donefile} to the path of your liking.
+Just copy done.sh to your binaries directory, change {donefile} to the path of your likin.
